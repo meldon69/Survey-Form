@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#title {
+  font-size: 3.5rem;
+  font-family: 'Hahmlet', serif;
+  font-weight: 900;
+  color: rgb(8, 208, 255);
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 1.5rem 0 1rem 0;
+}
+
+#description {
+  font-size: 1.45rem;
+  font-family: 'Hahmlet', serif;
+  font-weight: 500;
+  font-style: italic;
+  color: rgb(8, 208, 255);
+  background: rgb(0, 0, 0, 0.7);
+  padding-bottom: 2rem;
+}
+
+#screen {
+  background: rgba(0, 0, 0, 0.7);
+  padding-bottom: 2rem;
+}
+
+.container {
+  width: 100%;
+  background-image: url(./Images/rock-resized.jpg);
+  background-size: cover;
+  text-align: center;
+  /* padding-bottom: 1.5rem; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#survey-form {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(240, 242, 239, 0.85);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  border: 2px solid rgb(8, 208, 255);
+  border-radius: 3px;
+}
+.questions {
+  text-align: left;
+  padding: 1.5rem;
+}
+.label {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.input {
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+}
+
+.input:focus {
+  outline: none;
+  border: 3px solid rgb(8, 208, 255);
+}
+
+.input::selection {
+  background: #08d0ff;
+}
+
+.radio {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.extra {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#name,
+#email {
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+}
+#number,
+#dropdown {
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+}
+.qclass {
+  padding-top: 1.5rem;
+}
+.textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #fbfcf6;
+  font-size: 1.25rem;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.5rem;
+}
+#submit {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  background: #08d0ff;
+  border-radius: 5px;
+  width: 100%;
+}
+@media screen and (max-width: 1150px) {
+  #survey-form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #survey-form {
+    width: 60%;
+  }
+  #description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #survey-form {
+    width: 70%;
+  }
+  #title {
+    font-size: 3rem;
+  }
+  #description {
+    font-size: 1.3rem;
+  }
+  .label {
+    font-size: 1.25rem;
+  }
+  .radio {
+    font-size: 1rem;
+  }
+  .textarea {
+    font-size: 1rem;
+  }
+  #submit {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #survey-form {
+    width: 85%;
+  }
+  #title {
+    font-size: 2.5rem;
+  }
+  #description {
+    font-size: 1.2rem;
+  }
+  .label {
+    font-size: 1.25rem;
+  }
+  .radio {
+    font-size: 1rem;
+  }
+  .textarea {
+    font-size: 1rem;
+  }
+  #submit {
+    font-size: 1.25rem;
+  }
+}

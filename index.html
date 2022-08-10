@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <h1 id="title">Rock Music Survey</h1>
+      <p id="description">
+        We hope you can take a minute to tell us a bit about your exposure to
+        rock!
+      </p>
+      <div id="screen">
+        <!-- Survey Form -->
+        <form id="survey-form">
+          <!-- Text -->
+          <div class="questions">
+            <label for="name" id="name-label" class="label">Name</label>
+            <br />
+            <input
+              class="input"
+              id="name"
+              type="text"
+              required
+              placeholder="Enter name"
+            />
+          </div>
+          <!-- Email -->
+          <div class="questions">
+            <label for="email" id="email-label" class="label">Email</label>
+            <br />
+            <input
+              class="input"
+              id="email"
+              type="email"
+              required
+              placeholder="Enter valid email address"
+            />
+          </div>
+
+          <!-- Number -->
+          <div class="questions">
+            <label for="number" id="number-label" class="label">Age</label>
+            <br />
+            <input
+              class="input"
+              id="number"
+              type="number"
+              min="0"
+              max="150"
+              placeholder="Enter age"
+            />
+          </div>
+
+          <!-- Dropdown -->
+          <div class="questions qclass">
+            <label for="dropdown" id="dropdown-label" class="label"
+              >Do you enjoy listening to rock music?</label
+            >
+            <br />
+            <select class="input" id="dropdown">
+              <option class="input drop" value="Yes">Yes</option>
+              <option class="input drop" value="Sometimes">Sometimes</option>
+              <option class="input drop" value="No">No</option>
+            </select>
+          </div>
+
+          <!-- Radio -->
+          <div class="questions qclass">
+            <label class="label">Have you ever attended a rock concert?</label>
+            <br />
+            <input
+              class="extra"
+              id="Yes"
+              value="Yes"
+              type="radio"
+              name="concert"
+            />
+            <label for="Yes" class="input radio">Yes</label>
+            <input
+              class="extra"
+              id="No"
+              value="No"
+              type="radio"
+              name="concert"
+            />
+            <label for="No" class="input radio">No</label>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="questions qclass">
+            <label class="label">Select the bands you enjoy</label>
+            <br />
+            <input class="extra" type="checkbox" value="Nirvana" id="Nirvana" />
+            <label for="Nirvana" class="input radio">Nirvana</label>
+            <br />
+            <input
+              class="extra"
+              type="checkbox"
+              value="Led Zeppelin"
+              id="Led Zeppelin"
+            />
+            <label for="Led Zeppelin" class="input radio">Led Zeppelin</label>
+            <br />
+            <input
+              class="extra"
+              type="checkbox"
+              value="Slipknot"
+              id="Slipknot"
+            />
+            <label for="Slipknot" class="input radio">Slipknot</label>
+            <br />
+            <input
+              class="extra"
+              type="checkbox"
+              value="Metallica"
+              id="Metallica"
+            />
+            <label for="Metallica" class="input radio">Metallica</label>
+            <br />
+            <input
+              class="extra"
+              type="checkbox"
+              value="Black Sabbath"
+              id="Black Sabbath"
+            />
+            <label for="Black Sabbath" class="input radio"
+              >Black Sabbbath</label
+            >
+            <br />
+            <input class="extra" type="checkbox" value="None" id="None" />
+            <label for="None" class="input radio">None</label>
+          </div>
+
+          <!-- Text Area -->
+          <div class="questions qclass">
+            <label for="comments" class="label"
+              >Please list your favorite bands that werent on the list, or any
+              other comments!</label
+            >
+            <br />
+            <textarea
+              id="comments"
+              cols="45"
+              rows="6"
+              class="textarea"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="questions">
+            <input title="thanks" type="submit" id="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

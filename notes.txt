@@ -1,0 +1,14 @@
+==== THINGS I NEED TO WORK ON ====
+
+Form Elements
+
+Inputs + Labels & how they go together
+    -value
+    -id
+    -name
+    -min/max
+    -placeholder
+
+Fixed background (no scroll) (for background image)
+
+Git
